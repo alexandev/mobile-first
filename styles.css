@@ -46,6 +46,7 @@ html{
     min-width: 320px;
     height: 334px;
     background: var(--grad-negro-naranja);
+    margin-bottom: 60px;
 }
 
 .header figure{
@@ -112,4 +113,67 @@ html{
     height: 8px;
     margin-left: 10px;
     background-image: url(./assets/icons/arrow-down.svg);
+}
+
+/**/
+.exchange{
+    background: var(--off-white);
+}
+.exchange__background{
+    background: url(assets/images/bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.exchange__text h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--warm-black);
+
+    margin-bottom: 24px;
+}
+
+.exchange__text p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    color: #757575;
+}
+
+.exchange__table{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.exchange__table__grid{
+    background: var(--white);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    border-radius: 8px;
+}
+
+.grid-item{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 39px;
+}
+
+.grid-item .right, 
+.grid-item .left{
+    text-align: center;
+    border: .5px solid var(--off-white);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
