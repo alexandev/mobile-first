@@ -19,6 +19,8 @@
     --off-white:#FAF8F7;
     --white:#FFFFFF;
     --grad-negro-naranja: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --gris-texto: #b5b0ac;
+    --gris-texto2:#757575;
 }
 
 
@@ -46,7 +48,8 @@ html{
     min-width: 320px;
     height: 334px;
     background: var(--grad-negro-naranja);
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    display: none;
 }
 
 .header figure{
@@ -118,6 +121,7 @@ html{
 /**/
 .exchange{
     background: var(--off-white);
+    padding-top: 60px;
 }
 .exchange__background{
     background: url(assets/images/bitcoin.svg);
@@ -127,6 +131,11 @@ html{
     width: 200px;
     height: 200px;
     margin: 0 auto;
+}
+
+.exchange__text{
+    margin-bottom: 48px;
+    padding: 0 17px;
 }
 
 .exchange__text h2{
@@ -145,11 +154,21 @@ html{
     text-align: center;
     font-weight: 500;
     color: #757575;
+    font-style: normal;
 }
 
 .exchange__table{
     width: 200px;
     margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.exchange__table h3{
+    font-size: 1.8rem;
+    color: var(--bitcoin-orange);
+    font-weight: 700;
+    margin-bottom: 12px;
+    margin-left: 12px;
 }
 
 .exchange__table__grid{
@@ -162,7 +181,8 @@ html{
 
 .grid-item{
     width: 100%;
-
+    min-width: 101px;
+    min-height: 39px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 39px;
@@ -176,4 +196,47 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.grid-item .left{
+    font-size: 16px;
+    color: var(--gris-texto);
+}
+
+.grid-item .right{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: var(--gris-texto2);
+    
+}
+
+.right i{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-image: url('/assets/icons/trending-down.svg');
+    background-position: center;
+    margin-left: 10px;
+}
+
+.actualizado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.actualizado p{
+    padding: 8px;
+    background: var(--soft-orange);
+    display: inline-block;
+    /* width: 100%; */
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 73px;
+}
+
+.actualizado p strong{
+    font-weight: 900;
+    color:var(--warm-black);
+    font-size: 12px;
 }
